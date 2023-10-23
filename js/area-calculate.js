@@ -27,3 +27,10 @@ function rectangleCalculator(){
     const rectangleArea = document.getElementById('rectangle-area');
     rectangleArea.innerText = area;
 }
+
+function calculateParallelogramArea(id){
+    const inputFields = document.getElementById(id);
+    const inputFieldsText = inputFields.value;
+    const inputValue = parseFloat(inputFieldsText);
+    return inputValue;
+}
