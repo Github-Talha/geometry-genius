@@ -1,81 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.3/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
-    <main>
-        <!-- main container  -->
-        <div class="flex flex-col lg:flex-row mt-10">
-            <!-- shape container  -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- triangle card  -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/triangle.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Triangle</h2>
-                        <p class="space-x-4">
-                            <input id="base-input" placeholder="base" class="w-20 bg-gray-200 px-2"
-                                type="text"><span>CM</span>
-                            <input id="triangle-height" placeholder="height" class="w-20 bg-gray-200 px-2"
-                                type="text"><span>CM</span>
-                        </p>
-                        <div class="card-actions justify-end">
-                            <button onclick="areaCalculator()" class="btn btn-primary w-full">Calculate</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- rectangle card  -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Rectangle</h2>
-                        <p class="space-x-4">
-                            <input id="rectangle-witdh" placeholder="Width" class="w-20 bg-gray-200 px-2"
-                                type="text"><span>Width</span>
-                            <input id="rectangle-length" placeholder="Length" class="w-20 bg-gray-200 px-2"
-                                type="text"><span>Length</span>
-
-                        </p>
-                        <p>Area <span id="rectangle-area">0</span></p>
-                        <div class="card-actions justify-end">
-                            <button onclick="rectangleCalculator()" class="btn btn-primary w-full">Calculate</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- parallelogram card  -->
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Parallelogram</h2>
-                        <p class="space-x-4">
-                            <input id="para-width" placeholder="base" class="w-20 bg-gray-200 px-2"
-                                type="text"><span>Width</span>
-                            <input id="para-height" placeholder="height" class="w-20 bg-gray-200 px-2"
-                                type="text"><span>Length</span>
-
-                        </p>
-                        <p>Area <span id="para-area">0</span></p>
-                        <div class="card-actions justify-end">
-                            <button onclick="calculateParallelogramArea()"
-                                class="btn btn-primary w-full">Calculate</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- area calculator  -->
-            <div>
-                <div class="text-4xl">Area calculator</div>
-            </div>
-        </div>
-    </main>
-    <script src="./js/area-calculate.js"></script>
+    
 </body>
-
 </html>
