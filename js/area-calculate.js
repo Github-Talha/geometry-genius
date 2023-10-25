@@ -45,3 +45,8 @@ function getInputFields(inputId) {
     const inputValue = parseFloat(inputValueString);
     return inputValue;
 }
+//set p,span,div inner text 
+function setElementInnerText (elementId , area){
+    const element = document.getElementById(elementId);
+    element.innerText = area;
+}
