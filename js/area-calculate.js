@@ -36,7 +36,8 @@ function calculateParallelogramArea() {
 
     //calculate area
     const area = paraBaseValue * paraHeightValue;
-    console.log(area)
+    //set area element 
+    setElementInnerText('parallelogram-area',area)
 }
 // get input fields 
 function getInputFields(inputId) {
