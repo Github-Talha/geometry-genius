@@ -36,8 +36,22 @@ function calculateParallelogramArea() {
 
     //calculate area
     const area = paraBaseValue * paraHeightValue;
+    if (isNaN(area)) {
+        alert('Please input a number');
+        return
+    }
     //set area element 
-    setElementInnerText('parallelogram-area', area)
+    setElementInnerText('parallelogram-area', area);
+
+    //set total element
+    setTheResultOnTheAreaSector('Parallelogram', area);
+}
+//add to calculation area
+function setTheResultOnTheAreaSector(areaType, area) {
+    const entryTotal = document.getElementById('AreaCalculation');
+    const p = document.createElement('p');
+    p.innerText = (areaType + ' ' + area);
+    entryTotal.appendChild(p);
 }
 // ellipse 
 function calculateEllipseArea() {
